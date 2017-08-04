@@ -38,7 +38,7 @@ public class TextController : MonoBehaviour {
 		else if(myState == States.janitor) 		{janitor();}	
 		else if(myState == States.guard)  		{guard();}
 	}
-	
+	#region state handlers
 	void cell() {
 		text.text = "Sunlight hits your face through the cold steel bars of your tiny cell window, as "
 				+ "it always does at around 8am during summer months. If there's one positive thing about your "
@@ -238,4 +238,5 @@ public class TextController : MonoBehaviour {
 			myState = States.cell;
 		}		
 	}
+	#endregion
 }
