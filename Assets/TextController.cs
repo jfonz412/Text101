@@ -105,10 +105,10 @@ public class TextController : MonoBehaviour {
 	}
 	
 	void lock_1() {
-		text.text = "You use the mirror to peer down the corridor_0. There are no guards coming. "
+		text.text = "You use the mirror to peer down the corridor. There are no guards coming. "
 			       + "With all the strength you have left you slam your body against the old rusy door. "
-			       + "The old lock gives way, you find yourself on the floor of the corridor_0 outside your cell. \n\n"
-			       + "Press C to start walking down the corridor_0.";
+			       + "The old lock gives way, you find yourself on the floor of the corridor outside your cell. \n\n"
+			       + "Press C to start walking down the corridor.";
 		if(Input.GetKeyDown(KeyCode.C)) {
 			myState = States.corridor_0;
 		}
